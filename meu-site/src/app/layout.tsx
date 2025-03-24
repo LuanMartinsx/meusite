@@ -1,6 +1,7 @@
 
 import { Header } from "@/components/Header";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 
 
@@ -12,10 +13,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased bg-black`}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
